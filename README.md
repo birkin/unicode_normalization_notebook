@@ -1,43 +1,47 @@
-# install
+## overview
 
-### initial setup...
+I had created this in some markdown notes, but wanted to experiment with jupyter notebooks, and also create the possibility (if this is hosted on a jupyter-hub-like server) of folk playing with the code interactively.
 
-```
-% mkdir ./unicode_normalization_notebook_stuff
+---
 
-% cd ./unicode_normalization_notebook_stuff/
-```
+## installallation
 
-### get code...
+(adjust as desired)
 
-```
-% git clone https://github.com/birkin/unicode_normalization_notebook.git
+- initial setup...
 
-% cd ./unicode_normalization_notebook/
-```
+    ```
+    % mkdir ./unicode_normalization_notebook_stuff
 
-### set up venv...
+    % cd ./unicode_normalization_notebook_stuff/
+    ```
 
-```
-% python3 -m venv ../env
+- get code...
 
-% source ../env/bin/activate
-```
+    ```
+    % git clone https://github.com/birkin/unicode_normalization_notebook.git
 
-### populate venv...
+    % cd ./unicode_normalization_notebook/
+    ```
 
-```
-% pip install pip_tools
+- set up venv...
 
-% pip-compile ./requirements.in --upgrade-package jupyter
+    ```
+    % python3 -m venv ../env
 
-% pip install -r ./requirements.txt
-```
+    % source ../env/bin/activate
+    ```
 
-### run the notebook
+- populate venv...
 
-```
-% jupyter notebook
-```
+    ```
+    % pip install -r ./requirements.txt
+    ```
+
+- run the notebook
+
+    ```
+    % jupyter notebook
+    ```
 
 ---
